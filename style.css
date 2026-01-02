@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+
+/* Style for whole page */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+/* sytle for main page  */
+.main {
+    background-image: url('assets/images/bg.jpg');
+    height: 80vh;
+    position: relative;
+    background-position: center center;
+    background-size: max(100px, 90vw);
+    background-repeat: no-repeat;
+    background-color: #332021;
+}
+
+/* style for transparent box over main section */
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.70;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+/* Style for navigation bar */
+nav {
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+
+/* style for logo image in navigation bar */
+nav img {
+    width: 200px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Full logo and N logo display in reposive design */
+/* Default: Show the full logo */
+.fulllogo {
+    display: block;
+}
+
+.nlogo {
+    display: none;
+    width: 45px;
+}
+
+/* When screen width is smaller (e.g., below 600px), show only the N logo */
+@media (max-width: 600px) {
+    .fulllogo {
+        display: none;
+    }
+
+    .nlogo {
+        display: block;
+    }
+}
+
+/* style for buttons in navigation bar */
+nav select {
+    position: relative;
+    z-index: 10;
+    border-radius: 20px;
+    line-height: 1.25rem;
+
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    border-radius: 20px;
+    line-height: 1.25rem;
+    width: 50px;
+
+}
+
+/* Style for main text */
+.button-text2 {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    width: 70px;
+    height: 30px;
+    border: 0;
+    cursor: pointer;
+}
+
+.button-text1 {
+    background-color: #1a1011;
+    color: white;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.hero {
+    height: calc(100% - 122px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    font-family: "Martel Sans", sans-serif;
+    gap: 23px;
+    padding: 30px;
+    text-align: center;
+}
+
+.hero> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero> :nth-child(2) {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.email-input {
+    background-color: rgba(23, 23, 23, 0.2);
+    padding: 13px 33px;
+    font-size: 15px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid rgba(246, 238, 238, 0.4);
+}
+
+.getstarted-btn {
+    background-color: red;
+    border: 0;
+    padding: 12px 19px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.sepration {
+    height: 5px;
+    background-color: gray;
+}
+
+.firstsection {
+    color: white;
+    margin: 2rem 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.sectiontext1 {
+    margin: 0.5rem;
+}
+
+.selector1 {
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: rgba(59, 41, 41, 0.244);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+option {
+    color: #000;
+    font-weight: bold;
+}
+
+.selector2 {
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: rgba(59, 41, 41, 0.244);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.top10movies {
+    background-color: #000000;
+    margin: 2rem 8rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+
+.ullist {
+    display: flex;
+    padding: 0px;
+    list-style: none;
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+
+.imgs {
+    height: 270px;
+    width: 170px;
+    display: block;
+    border-radius: 20px;
+}
+
+.mvname {
+    position: absolute;
+    visibility: hidden;
+    left: -9999px;
+}
+
+.scrollbtn {
+    border-radius: 20px;
+    background-color: #000;
+    border: 0;
+    padding: 15px 15px;
+}
+
+.moresection {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 8rem;
+    color: white;
+
+}
+
+.moresubsection {
+    color: white;
+    margin: 10px;
+    background-color: grey;
+    border-radius: 20px;
+    padding: 20px 10px;
+}
+
+.moresubsection-4 {
+    padding: 20px 20px;
+}
+
+.sectiontext2 {
+    color: white;
+    margin: 2rem 8rem;
+    margin-bottom: -1%;
+}
+
+svg {
+    padding-left: 220px;
+    padding-top: 15px;
+}
+
+.sectiontext3 {
+    color: white;
+    margin: 2rem 8rem;
+    margin-bottom: -1%;
+}
+
+.faq {
+    color: white;
+}
+
+.firstquestion {
+    display: flex;
+    background-color: rgb(24, 23, 23);
+    margin: 2rem 8rem;
+    padding: 20px 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.plus {
+    padding-left: 1150px;
+    margin-top: -33px;
+}
+
+.secondquestion {
+    display: flex;
+    background-color: rgb(24, 23, 23);
+    margin: 2rem 8rem;
+    padding: 20px 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.thirdquestion {
+    display: flex;
+    background-color: rgb(24, 23, 23);
+    margin: 2rem 8rem;
+    padding: 20px 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.fourthquestion {
+    display: flex;
+    background-color: rgb(24, 23, 23);
+    margin: 2rem 8rem;
+    padding: 20px 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.fifthquestion {
+    display: flex;
+    background-color: rgb(24, 23, 23);
+    margin: 2rem 8rem;
+    padding: 20px 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.sixthquestion {
+    display: flex;
+    background-color: rgb(24, 23, 23);
+    margin: 2rem 8rem;
+    padding: 20px 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.lastsec {
+    margin-left: 45rem;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.lastbtn {
+    background-color: red;
+    border: 0;
+    padding: 15px 30px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.r1 {
+    display: flex;
+}
+
+.text {
+    margin-left: -3.9rem;
+    margin-top: 0.5rem;
+}
+
+footer {
+    color: white;
+    margin: 1.5rem 8rem;
+}
+
+.footer-text div {
+    padding: 12px;
+}
+
+.footer-subtext {
+    margin-top: 3rem;
+}
+
+.footer-subtext2 {
+    margin-left: 10rem;
+}
+
+.lastselect {
+    background-color: transparent;
+    color: white;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 3rem 1rem;
+    width: 100px;
+    height: 35px;
+    font-weight: bold;
+}
